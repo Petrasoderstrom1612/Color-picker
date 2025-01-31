@@ -4,8 +4,9 @@ body{
 
 main{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;        
 }
 
 .main-container{
@@ -13,6 +14,7 @@ main{
     padding: 5px;
     background-color: white;
     max-width: 347px;;
+    min-width: 342px
 }
 
 /* input */
@@ -20,6 +22,7 @@ main{
     display: flex;
     align-items: stretch;
     justify-content: space-between;
+    gap: 5px;
 }
 
 .color-input{
