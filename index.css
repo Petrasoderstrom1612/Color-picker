@@ -1,5 +1,6 @@
 body{
     background-color: #1C1C1C;
+    font-family: "Inter", serif;
 }
 
 main{
@@ -11,10 +12,9 @@ main{
 
 .main-container{
     border: 1px solid #1C1C1C;
-    padding: 5px;
     background-color: white;
-    max-width: 347px;;
-    min-width: 342px
+    max-width: 347px;
+    padding: 10px;
 }
 
 /* input */
@@ -23,6 +23,7 @@ main{
     align-items: stretch;
     justify-content: space-between;
     gap: 5px;
+    margin-top: 10px;
 }
 
 .color-input{
@@ -38,12 +39,14 @@ main{
 .scheme-options{
     border: 1px solid #E5E5E5;
     border-radius: 5px;
+    font-family: "Inter", serif;
 }
 
 .submit-btn{
     background-color: white;
     border: 1px solid #E5E5E5;
     border-radius: 5px;
+    font-family: "Inter", serif;
 }
 
 /* palette */
@@ -54,6 +57,7 @@ main{
 .all-colors-box{
     display: flex;
     margin-top: 16px;
+    height:292px;
 }
 
 .one-color-components{
@@ -63,6 +67,8 @@ main{
 }
 
 .color-text{
-    font-size:small;
+    font-size:11px;
     align-self: center;
+    color:#4C303F;
+    font-weight: 600;;
 }
