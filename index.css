@@ -1,0 +1,17 @@
+.one-color-box{
+    height: 250px;
+}
+
+.all-colors-box{
+    display: flex;
+}
+
+.one-color-components{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+p{
+    font-size:small;
+}
