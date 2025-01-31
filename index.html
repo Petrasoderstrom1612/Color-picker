@@ -10,11 +10,10 @@
 
 <body>
     <main>
-        <div id="main-container">
-            <div id="color-picker-div">
-                <form id="color-picker-form">
-                    <input type="color" id="color-input"/>
-                    <select id="scheme-options">
+        <div id="main-container" class="main-container">
+                <form id="color-picker-form" class="color-picker-form">
+                    <input type="color" id="color-input" class="color-input"/>
+                    <select id="scheme-options" class="scheme-options">
                         <option value="monochrome">Monochrome</option>
                         <option value="monochrome-dark">Monochrome dark</option>
                         <option value="monochrome-light">Monochrome light</option>
@@ -23,10 +22,9 @@
                         <option value="analogic-complement">Analogic-complement</option>
                         <option value="triad">Triad</option>
                     </select>
-                    <button type="submit">Get color scheme</button>
+                    <button type="submit" class="submit-btn">Get color scheme</button>
                 </form>
                 <div id="all-colors-box" class="all-colors-box"></div>
-            </div>
         </div>
     </main>
     <script src="index.js" type="module"></script>

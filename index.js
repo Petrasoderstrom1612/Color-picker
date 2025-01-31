@@ -19,7 +19,7 @@ colorPickerForm.addEventListener("submit", (e) => {
             html += `
             <div class="one-color-components">
                 <div class="one-color-box" style="background-color:${oneColor.hex.value}"></div>
-                <p>${oneColor.hex.value}</p>
+                <p class="color-text">${oneColor.hex.value}</p>
             </div>
             `
         }
