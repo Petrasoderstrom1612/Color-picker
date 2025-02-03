@@ -18,11 +18,20 @@ colorPickerForm.addEventListener("submit", (e) => {
         for(let oneColor of data.colors){
             html += `
             <div class="one-color-components">
-                <div class="one-color-box" style="background-color:${oneColor.hex.value}"></div>
+                <div class="one-color-box" style="background-color:${oneColor.hex.value}" data-color=${oneColor.hex.value}></div>
                 <p class="color-text">${oneColor.hex.value}</p>
             </div>
             `
         }
         allColorsBox.innerHTML = html
+
+        document.querySelectorAll(".one-color-box").forEach((oneBox) =>{
+            oneBox.addEventListener("click", function ()  {
+                const color = this.getAttribute("data-color")
+                navigator.clipboard.writeText(color).then(
+                    console.log(`${color} copied`)
+                )
+            })
+        })
     })
 })
