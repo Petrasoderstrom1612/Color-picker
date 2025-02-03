@@ -25,13 +25,11 @@ colorPickerForm.addEventListener("submit", (e) => {
         }
         allColorsBox.innerHTML = html
 
-        document.querySelectorAll(".one-color-box").forEach((oneBox) =>{
-            oneBox.addEventListener("click", function ()  {
-                const color = this.getAttribute("data-color")
-                navigator.clipboard.writeText(color).then(
-                    console.log(`${color} copied`)
-                )
-            })
+        document.addEventListener("click", (e) =>{
+            if(e.target.dataset.color){
+                navigator.clipboard.writeText(e.target.dataset.color)
+                console.log(`${e.target.dataset.color} copied`)          
+            }
         })
     })
 })
